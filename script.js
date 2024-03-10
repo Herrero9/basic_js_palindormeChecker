@@ -3,13 +3,16 @@ const inputText = document.getElementById('text-input');
 const submitButton = document.getElementById('check-btn');
 const result = document.getElementById('result');
 
+const regex = /[(\W)\_*]/g;
 
 const checkPalindrome = (e) => {
   e.preventDefault();
   let word = inputText.value;
-  let reverseWord = word.split('').reverse().join('');
+  let cleanWord = word.toLowerCase().replace(regex, '');
+  console.log(cleanWord);
+  let reverseWord = cleanWord.split('').reverse().join('');
   if(word !== null && word.length > 0){
-    if (word == reverseWord){
+    if (cleanWord == reverseWord){
       result.innerHTML = `${word} is a palindrome`;
     }else{
       result.innerHTML = `${word} is not a palindrome`;
