@@ -20,10 +20,12 @@ main{
   justify-content: center;
   flex-direction: column;
 }
+
 img{
   width: 300px;
   margin-bottom: 20px;
 }
+
 #palindromeForm {
   display: flex;
   flex-direction: column;
