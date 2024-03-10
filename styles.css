@@ -1,14 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #0a0a23;
+  color: #ffffff;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 h1 {
@@ -16,32 +11,42 @@ h1 {
   margin-bottom: 20px;
 }
 
-.input-group {
+main{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.input-group input {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
+#palindromeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.input-group button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-.result {
+#result {
   text-align: center;
-  margin-top: 20px;
-}
-
-.result p {
+  max-width: 200px;
+  margin: 20px auto 0 auto;
   font-size: 18px;
   font-weight: bold;
+}
+
+#hint {
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+  margin: 20px auto 0 auto;
+  font-size: 14px;
+  color: white;
+  background-color: #4caf50;
+  border-radius: 20px;
 }
