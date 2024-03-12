@@ -1,1 +1,1 @@
-Programa basico en JavaScript que comprueba si una palabra es un palíndromo.
+Programa básico en JavaScript que comprueba si una palabra es un palíndromo.
